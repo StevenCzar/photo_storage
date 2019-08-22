@@ -1,0 +1,26 @@
+
+#nav{
+	background-color:#FF6F33;
+	width: auto;
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+}
+
+#nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+#nav .selected{
+	font-weight: bold;
+}
+
+#footer{
+	clear: both;
+	padding:10px;
+	background-color:#999999;
+	color:white;
+	text-align: right;
+}

@@ -1,7 +1,36 @@
-<!doctype html>
-    <title>upload photo</title>
-    <h1>Upload new photo</h1>
-    <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=submit value=Upload>
-    </form>
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>CzarNet</title>
+    	<link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
+    </head>
+    <body>
+    	<div id="container">
+    		<div id="header">
+    			<h1>CzarNet</h1>
+			</div>
+    		<div id="content">
+	    		<div id="nav">
+	    			<h3>Navigation</h3>
+						<ul>
+							<li><a href="/home">Home</a></li>
+							<li><a href="/gallery">Gallery</a></li>
+							<li><a class = "selected" href="/upload">Upload</a></li>
+						</ul>
+	    		</div>
+	    		<div id="main">
+	    			<h3>Upload new photo</h3>
+	    			<br></br>
+	    			<form method=post enctype=multipart/form-data>
+	      			<input type=file name=file>
+	      			<input type=submit value=Upload>
+	      			<br></br>
+	    		</form>
+	    		</div> 	
+	    	</div>
+    		<div id="footer">
+				Copyright &copy; 2019 Steven Czarnecki
+			</div>	
+    </body>
+    
+</html>
