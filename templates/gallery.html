@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>CzarNet</title>
+    	<link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
+    </head>
+    <body>
+    	<div id="container">
+    		<div id="header">
+    			<h1>CzarNet</h1>
+			</div>
+    		<div id="content">
+	    		<div id="nav">
+	    			<h3>Navigation</h3>
+						<ul>
+							<li><a href="/home">Home</a></li>
+							<li><a class = "selected" href="/gallery">Gallery</a></li>
+							<li><a href="/upload">Upload</a></li>
+						</ul>
+	    		</div>
+	    		<div id="main">
+	    			{{first_event}} to {{second_event}}
+    				{% for hist in hists %}
+   					<img src="{{url_for('files', filename=hist)}}" alt="{{hist}}">
+    				{% endfor %}
+	    		</div> 	
+	    	</div>
+    		<div id="footer">
+				Copyright &copy; 2019 Steven Czarnecki
+			</div>	
+    </body>
+    
+</html>

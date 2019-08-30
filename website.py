@@ -42,6 +42,12 @@ def upload_file():
             return redirect(url_for('uploaded_file', filename=filename))
     return render_template('upload.html')
 
+@app.route('/gallery')
+def gallery():
+    hists = os.listdir("/files")
+    hists = ['files/' + file for file in hists]
+    return render_template('gallery.html')
+
 
 if __name__ == '__main__':
 	app.run(debug=True, host = '0.0.0.0')
